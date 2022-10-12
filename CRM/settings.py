@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-f=eg!@h5=)-q!=s&*6cxfwh82qfvdwcpd^wc&m#pi)_1lyr!**
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'system',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'CRM.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_crm',
         'USER': 'root',
         'PASSWORD': '123Mumaren',
